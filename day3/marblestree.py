@@ -1,4 +1,4 @@
-def solve(n, num_marbles, children):
+def solve(n, num_marbles, adj):
     pass
 
 
@@ -9,19 +9,20 @@ while True:
         break
 
     num_marbles = []
-    children = []
+    adj = [[] for _ in range(n)]
     for i in range(n):
         line = input().split()
         num_marbles.append(int(line[1]))
 
-        num_children = int(line[2])
-        chi = []
-        for i in range(num_children):
-            chi.append(int(line[3 + i]) - 1)
+        num_neighs = int(line[2])
+        neighs = list(map(int, line[3:]))
+        for nei in neighs:
+            nei -= 1
+            adj[nei].append(i)
+            adj[i].append(nei)
 
-        children.append(chi)
     
-    solve(n, num_marbles, children)
+    solve(n, num_marbles, adj)
 
 
 
