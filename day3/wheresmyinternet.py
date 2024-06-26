@@ -1,6 +1,6 @@
-def dfs(node, adj, visited):
+def solve(n, m, edge_list):
     pass
-
+    
 
 # Input. Don't change.
 import sys
