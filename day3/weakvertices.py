@@ -1,11 +1,6 @@
-def solve(n, adj_mat):
+def solve(n, adj):
     """
-    adj_mat: The adjacency matrix, as given in the question. It is stored in a 2D list, for example,
-    [
-        [0, 1, 0],
-        [1, 0, 1],
-        [0, 1, 0]
-    ]
+    Adjacency lists of the given graph
     """
     pass
 
@@ -17,12 +12,15 @@ while True:
         break
 
     adj_mat = []
-    for _ in range(n):
-        adj_mat.append(
-            list(map(int, input().split()))
-        )
+    adj = [[] for _ in range(n)]
+    for i in range(n):
+        row = list(map(int, input().split()))
+        for j, val in enumerate(row):
+            if val == 1:
+                adj[i].append(j)
+
     
-    solve(n, adj_mat)
+    solve(n, adj)
 
     
 
