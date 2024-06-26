@@ -1,6 +1,6 @@
 def solve(n, adj):
     """
-    Adjacency lists of the given graph
+    adj: Adjacency list of the given graph
     """
     pass
 
