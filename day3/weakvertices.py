@@ -2,6 +2,7 @@ def solve(n, adj):
     """
     adj: Adjacency list of the given graph
     Nodes/Vertices are numbered from 0 to n-1
+    Write your code here.
     """
     pass
 
