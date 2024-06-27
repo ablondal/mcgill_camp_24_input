@@ -1,7 +1,7 @@
 def solve(n, adj):
     """
     adj: Adjacency list of the given graph
-    Vertices are numbered from 0 to n-1
+    Nodes/Vertices are numbered from 0 to n-1
     """
     pass
 
